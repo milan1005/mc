@@ -526,8 +526,8 @@ do_background (file_op_context_t * ctx, char *info)
 
     if (pipe (back_comm) == -1)
     {
-        (void) close (comm [0]);
-        (void) close (comm [1]);
+        (void) close (comm[0]);
+        (void) close (comm[1]);
 
         return (-1);
     }
