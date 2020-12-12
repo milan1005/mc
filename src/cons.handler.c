@@ -204,7 +204,7 @@ handle_console_linux (console_action_t action)
                 /* Bind standard error to /dev/null */
                 status = open ("/dev/null", O_WRONLY);
                 if (status == -1)
-                     break;
+                    break;
                 ok = dup2 (status, STDERR_FILENO) != -1;
                 status = close (status);
                 if (!ok)
